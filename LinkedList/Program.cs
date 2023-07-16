@@ -7,11 +7,13 @@ namespace LinkedList
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Linked list Problem!");
-            Console.WriteLine("Program to appending linkedlist");
+            Console.WriteLine("Program to insert node into linkedlist");
             Custom_LinkedList linkedList = new Custom_LinkedList();
-            linkedList.Append(56);
-            linkedList.Append(30);
-            linkedList.Append(70);
+            linkedList.AddLast(56);
+            linkedList.AddLast(70);
+            linkedList.Display();
+            linkedList.Insert(2, 30);
+            Console.WriteLine("After 30 node is added into linkedlist");
             linkedList.Display();
         }
     }
