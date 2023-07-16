@@ -7,13 +7,14 @@ namespace LinkedList
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Linked list Problem!");
-            Console.WriteLine("Program to remove first node from linkedlist");
+            Console.WriteLine("Program to remove last node from linkedlist");
             Custom_LinkedList linkedList = new Custom_LinkedList();
             linkedList.AddLast(56);
             linkedList.AddLast(30);
             linkedList.AddLast(70);
             linkedList.Display();
-            linkedList.RemoveFirst();
+            Console.WriteLine("After removing last node from linkedlist");
+            linkedList.RemoveLast();
             linkedList.Display();
         }
     }

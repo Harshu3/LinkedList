@@ -51,15 +51,18 @@ namespace LinkedList
             return temp;
         }
             
-        public void RemoveFirst()
+        public void RemoveLast()
         {
             if (head == null)
                 Console.WriteLine("Linkedlist is empty");
+            else if (head.next == null)
+                head = null;
             else
             {
-                int delNode = head.data;
-                head = head.next;
-                Console.WriteLine("After removing {0} node from linkedlist", delNode);
+                Node temp = head;
+                while (temp.next.next != null)
+                    temp = temp.next;
+                temp.next = null;
             }
         }
     }
